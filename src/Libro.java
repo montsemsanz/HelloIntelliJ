@@ -6,10 +6,10 @@ public class Libro {
     private Estado estado;
     
     
-    public Libro(String titulo, LocalDate fecha) {
+    public Libro(String titulo, LocalDate fecha, Estado estado) {
         this.titulo = titulo;
         this.fecha = fecha;
-        this.estado = Estado.NOPRESTADO;
+        this.estado = estado;
     }
     
     public String getTitulo() {
@@ -18,6 +18,10 @@ public class Libro {
     
     public LocalDate getFecha() {
         return fecha;
+    }
+    
+    public void setEstado(Estado estado) {
+        this.estado = estado;
     }
     
     @Override
