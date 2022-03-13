@@ -1,5 +1,8 @@
 import java.time.LocalDate;
 
+/**
+* Representa a un libro
+*/
 public class Libro {
     private String titulo;
     private LocalDate fecha;
